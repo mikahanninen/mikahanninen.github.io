@@ -1,0 +1,86 @@
+
+<html>
+<head><title>Example HTML report</title></head>
+<body>
+</body>
+<pre>
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0     PROD1        9    50
+1     PROD2       11    50
+
+Column Summary
+--------------
+
+Number of columns in common: 9
+Number of columns in PROD1 but not in PROD2: 0
+Number of columns in PROD2 but not in PROD1: 2
+
+Row Summary
+-----------
+
+Matched on: address
+Any duplicates on match values: Yes
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 0
+Number of rows in PROD1 but not in PROD2: 50
+Number of rows in PROD2 but not in PROD1: 50
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 0
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 9
+Total number of values which compare unequal: 0
+
+Columns with Unequal Values or Types
+------------------------------------
+
+         Column PROD1 dtype PROD2 dtype  # Unequal  Max Diff  # Null Diff
+0  property no.       int32     float64          0       NaN            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+Sample Rows Only in PROD1 (First 10 Columns)
+--------------------------------------------
+
+    si. no.              circle  ward no.  property no.       old pid new holding no. old holding no.              owner name                                                                                              address
+13     25.0  New Capital Circle       3.0     2024681.0  2.701257e+09        A2688/42             NaN       TARKESHWAR MAHATO                                              TAHAL TOLA, P.O- DHANAUT, P.S.- RUPASPUR, PATNA, 801506
+14     44.0  New Capital Circle       3.0     2035059.0  2.701115e+09           312/1             NaN      VISHWA NAND PRASAD                                                   HOME NO-E6 MADHUWAN COLONY RUKANPURA PATNA, 800014
+45     46.0  New Capital Circle       3.0     2159762.0  2.701271e+09             NaN         160/297             KANTI SINGH                                                                  RN MARKET BAILEY ROAD PATNA, 800014
+37      3.0  New Capital Circle       3.0     2114026.0  2.701307e+09     NEW HOLDING            NEW.           SRIMANTI DEVI                                                 SIDHARTH NAGAR, NALA PAR, JAGDEO PATH, PATNA, 800014
+17     42.0  New Capital Circle       3.0     2045307.0  2.701315e+09            A619             NaN      RAM PRAKASH BHAGAT                                                   BIRLA COLONY, B/99, PHULWARI SHARIF, PATNA, 801505
+43      7.0  New Capital Circle       3.0     2138294.0           NaN             NaN             NaN       SRI MUKESH THAKUR                       BLOCK -B FLAT NO-306 SHANTI ENCLAVE ARA GARDEN ROAD GAGDEO PATH PATNA , 800014
+0      39.0  New Capital Circle       3.0     1236151.0           NaN             NaN             83A           URMILA KUMARI                                                                  ADARSH BIHAR COLONY RUKUNPURA PATNA
+39      2.0  New Capital Circle       3.0     2125089.0           NaN         1490/08             NaN          RABINDRA KUMAR                                             KHALILPURA,NEAR DEVI STHAN,PHULWARI SHARIF,PATNA, 801505
+29     40.0  New Capital Circle       3.0     2082620.0  2.701321e+09             NaN             NaN  MR. LAXMI NIWAS PODDAR                         FLAT NO -G-3, ORCHID RESIDENCY, AARAH GARDEN ROAD, JAGDEOPATH, PATNA, 800014
+49     13.0  New Capital Circle       3.0     2172795.0           NaN             NaN             NaN               NILU DEVI  FLAT NO.-301 BLOCK B 3RD FLOOR RIJENCY PRAGYA PRADEEP APPT JYATIPURAM COLONY KHAJPURA PATNA, 800014
+
+Sample Rows Only in PROD2 (First 10 Columns)
+--------------------------------------------
+
+    si. no.              circle  ward no.  property no.        sas no.  old pid new holding no. old holding no.            owner name                                                                                      address
+57     26.0  New Capital Circle       3.0     1408404.0  PMC/3/0949371      NaN             NaN            1460         DEVSHARAN RAY                                                                   TAHAL TOLA, DHANAUT, PATNA
+92     40.0  New Capital Circle       3.0           NaN  PMC/3/0948290      NaN             NaN             NaN           VEENA SINGH                             VEENA NIKETAN ROAD 2B ADARSH VIHAR COLONY RUKANPURA PATNA 800014
+87     35.0  New Capital Circle       3.0           NaN  PMC/3/0948608      NaN             NaN             NaN         SUNITA KUMARI                                            SUNITA KUMARI, VIKASH VIHAR COLONY RUPASPUR PATNA
+75     18.0  New Capital Circle       3.0           NaN  PMC/3/0950692      NaN             NaN             NaN     GYAN RANJAN KUMAR          FLAT.NO-201 SAI TULIP APARTMENT ARA GARDEN ROAD JAGDEO PATH BAILY ROAD PATNA 800014
+68      8.0  New Capital Circle       3.0           NaN  PMC/3/0951636      NaN             NaN             NaN  AWADHESH KUMAR SINHA                                 FLAT NO 506 PLUTUS THE WESTEND JP ROAD MAHUABAG PATNA 801506
+86     34.0  New Capital Circle       3.0           NaN  PMC/3/0948663      NaN             NaN             NaN           SHANTI DEVI                         SAUBHAGYA SHARMA PATH NEAR SUNRISE APARTMENT RUPASPUR PATNA...800014
+63      1.0  New Capital Circle       3.0           NaN  PMC/3/0952367      NaN             NaN             NaN            ANUJ KUMAR                                    BUDDHA VIHAR COLONY P.O SAHAY NAGAR DHANAUT PATNA- 801506
+85     32.0  New Capital Circle       3.0           NaN  PMC/3/0948879      NaN             NaN             NaN         SHAMA PERWEEN            FLAT NO 402 ABDUS SAMAD ENCLAVE MAKHDOOM RASTI NAGAR PHULWARI SHARIF PATNA 801505
+53     45.0  New Capital Circle       3.0     1408088.0  PMC/3/0947866      NaN             NaN             NaN          RAJMANI DEVI                                                                 SHARDA NAGAR SABAJPURA PATNA
+52     31.0  New Capital Circle       3.0     1382656.0  PMC/3/0948958      NaN        31/B/401             NaN           RITA SHARMA  FLAT NO BLOCK B 401 4TH FLOOR SHOBHA NIKETAN APT ARRA GARDEN ROAD P-S RUPASPUR PATNA-800014
+
+
+</pre>
+</html>
