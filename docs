@@ -1,6 +1,9 @@
-
 <html>
-<head><title>Example HTML report</title></head>
+
+<head>
+  <title>Updated HTML report</title>
+</head>
+
 <body>
 </body>
 <pre>
@@ -83,4 +86,5 @@ Sample Rows Only in PROD2 (First 10 Columns)
 
 
 </pre>
+
 </html>
