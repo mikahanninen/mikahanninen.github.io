@@ -1,87 +1,9 @@
-
 <html>
 <head><title>Example HTML report</title></head>
 <body>
-<h1>02/27/2021, 15:18:42
+<h1>REPORT_DATETIME_STRING</h1>
 <pre>
-DataComPy Comparison
---------------------
-
-DataFrame Summary
------------------
-
-  DataFrame  Columns  Rows
-0     PROD1        9    50
-1     PROD2       11    50
-
-Column Summary
---------------
-
-Number of columns in common: 9
-Number of columns in PROD1 but not in PROD2: 0
-Number of columns in PROD2 but not in PROD1: 2
-
-Row Summary
------------
-
-Matched on: address
-Any duplicates on match values: Yes
-Absolute Tolerance: 0
-Relative Tolerance: 0
-Number of rows in common: 0
-Number of rows in PROD1 but not in PROD2: 50
-Number of rows in PROD2 but not in PROD1: 50
-
-Number of rows with some compared columns unequal: 0
-Number of rows with all compared columns equal: 0
-
-Column Comparison
------------------
-
-Number of columns compared with some values unequal: 0
-Number of columns compared with all values equal: 9
-Total number of values which compare unequal: 0
-
-Columns with Unequal Values or Types
-------------------------------------
-
-         Column PROD1 dtype PROD2 dtype  # Unequal  Max Diff  # Null Diff
-0  property no.       int32     float64          0       NaN            0
-
-Sample Rows with Unequal Values
--------------------------------
-
-Sample Rows Only in PROD1 (First 10 Columns)
---------------------------------------------
-
-    si. no.              circle  ward no.  property no.       old pid new holding no. old holding no.                          owner name                                                                        address
-7      39.0  New Capital Circle       3.0     1266276.0           NaN             NaN           A1572                     SRI URMILA DEVI                                                             RUPASPUR PATNA- 01
-21     48.0  New Capital Circle       3.0     2052342.0  2.701317e+09             NaN            A322                      MD ABDUL RASID                                      KHALIL PURA PHULAWARISHARIF PATNA, 801505
-35     28.0  New Capital Circle       3.0     2082629.0  2.701002e+09             NaN          A 1043                GIRIWALA SHRIVASTAVA                        C-77, BIRLA COLONY, P.O.- PHULWARI SARIF, PATNA, 801505
-27     14.0  New Capital Circle       3.0     2067261.0  2.701100e+09           1461A             NaN                       KAMESHVAR RAY                        TAHAL TOLA, P.O.- DHANAUT, P.S.-RUPASPUR, PATNA, 801506
-30      4.0  New Capital Circle       3.0     2070287.0  2.701323e+09             NaN             NaN  KUSUM SINGH\nJITENDRA PRASAD SINGH  FLAT NO-301, HARSITA APARTMENT, DHANAUT, SAHAY NAGAR, RUPASPUR, PATNA, 801506
-6       8.0  New Capital Circle       3.0     1266276.0           NaN             NaN           A1572                     SRI URMILA DEVI                                                             RUPASPUR PATNA- 01
-12     37.0  New Capital Circle       3.0     2029026.0  2.701258e+09          A507/4             NaN                  BIBI SADIA SHAHEEN   V.KHALILLPURAF.C.I. KHALILPURA ROADNEAR BORING PHULWARI SHARIF PATNA, 801505
-28     43.0  New Capital Circle       3.0     2069428.0  2.701120e+09            A600             NaN                      PHULMANTI DEVI                             C-18, BIRLA COLONY, PHULWARI SHARIF, PATNA, 801505
-3      33.0  New Capital Circle       3.0     1266135.0           NaN           A1782             NaN                 SRI UMESHWAR THAKUR                                                                      RUPASHPUR
-37     21.0  New Capital Circle       3.0     2094687.0  2.701101e+09             NaN             507              SRI ALOK NATH TRIPATHI                      ADITYA NAGAR COLONY JAGDEO PATH BAILEY ROAD PATNA, 800014
-
-Sample Rows Only in PROD2 (First 10 Columns)
---------------------------------------------
-
-    si. no.              circle  ward no.  property no.        sas no.  old pid new holding no. old holding no.                             owner name                                                                                    address
-74     17.0  New Capital Circle       3.0           NaN  PMC/3/0952887      NaN             NaN             NaN   SMT HIRA KUMARI, SRI SHIDHARTH KUMAR                        FLAT NO 404 VICTORIA PALACE MAHUABAGH DHANAUT RUPASPUR PATNA 801506
-73     15.0  New Capital Circle       3.0           NaN  PMC/3/0953210      NaN             NaN             NaN  JAINENDRA KUMAR SHARMA, PUSHPA KUMARI                  SHIV VIHAR COLONY ROAD NO 01 TAHAL TOLA DHANAUT PS- RUPASPUR PATNA 801506
-83     29.0  New Capital Circle       3.0           NaN  PMC/3/0951727      NaN             NaN             NaN                       URMILA VIDYARTHI                  PLUTUS OASIS APARTMENT FLAT N 103 MAHUABAGH DHANAUT RUPASPUR PATNA 801506
-76     19.0  New Capital Circle       3.0           NaN  PMC/3/0949564      NaN             NaN             NaN                       DEO MUNI DWIVEDI                          BEHIND SAKSHI SADAN SUNDER NAGAR NALA PER LOHIYAPATH PATNA-800014
-56     16.0  New Capital Circle       3.0     1409209.0  PMC/3/0953136      NaN             NaN        A/1001/1                            VINOD SINGH                                                            SABAJPURA PHULWARI SHARIF PATNA
-52     42.0  New Capital Circle       3.0     1408605.0  PMC/3/0949664      NaN             NaN          478/B5                            NIRAJ KUMAR                                                  SUNDAR NAGAR LOHIA PATH JAGDEO PATH PATNA
-64      4.0  New Capital Circle       3.0           NaN  PMC/3/0775943      NaN             NaN             NaN  SRI JAI RAM SINGH, SMT. KAILASHI DEVI  FLAT NO-104/B SARYUG VAMIKA APPT. SOUBHAGYA SHARMA PATH RUPASPUR JAGDEO PATH PATNA-801506
-81     25.0  New Capital Circle       3.0           NaN  PMC/3/0952260      NaN             NaN             NaN                            LALITA DEVI    GAYATRI NAGAR AADARSH VIHAR COLONY SAUBHAGYA SHARMA PATH NEAR SUNRISE APPT PATNA 800014
-70     11.0  New Capital Circle       3.0           NaN  PMC/3/0953471      NaN             NaN             NaN                        RAJ BALLABH RAY                       FLAT NO 301 DEVGANGA APT MAHUABAGH NEAR MAHAVIR MANDIR PATNA -801506
-78     22.0  New Capital Circle       3.0           NaN  PMC/3/0952446      NaN             NaN             NaN                      AJEET KUMAR SINGH                                                     SABAJPURA PHULWARI SHARIF PATNA 801105
-
-
+COMPARISON_REPORT_OUTPUT
 </pre>
 </body>
 </html>
