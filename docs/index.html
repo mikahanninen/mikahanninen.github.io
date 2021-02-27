@@ -1,9 +1,86 @@
 <html>
 <head><title>Example HTML report</title></head>
 <body>
-<h1>REPORT_DATETIME_STRING</h1>
+<h1>02/27/2021, 17:50:09</h1>
 <pre>
-COMPARISON_REPORT_OUTPUT
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0     PROD1        9    50
+1     PROD2       11    50
+
+Column Summary
+--------------
+
+Number of columns in common: 9
+Number of columns in PROD1 but not in PROD2: 0
+Number of columns in PROD2 but not in PROD1: 2
+
+Row Summary
+-----------
+
+Matched on: address
+Any duplicates on match values: Yes
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 0
+Number of rows in PROD1 but not in PROD2: 50
+Number of rows in PROD2 but not in PROD1: 50
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 0
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 9
+Total number of values which compare unequal: 0
+
+Columns with Unequal Values or Types
+------------------------------------
+
+         Column PROD1 dtype PROD2 dtype  # Unequal  Max Diff  # Null Diff
+0  property no.       int32     float64          0       NaN            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+Sample Rows Only in PROD1 (First 10 Columns)
+--------------------------------------------
+
+    si. no.              circle  ward no.  property no.       old pid new holding no. old holding no.                             owner name                                                                                        address
+16     41.0  New Capital Circle       3.0     2081804.0  2.701002e+09             NaN         288B/2A                            ANIL PRASAD  FN-2A PARAM SMRITI APARTMENT SIDHARTHA NAGAR JAGDEO PATH P.O.- B.V. COLLEGE, PATNA-14, 800014
+20     25.0  New Capital Circle       3.0     2092776.0  2.701309e+09             NaN           290/1                         SMT KANAK LATA                  D/1 VAISHNAV VILLA SIDDHARATH NAGAR P.O-B.V COLLEGE JAGDEO PATH PATNA, 800014
+34     35.0  New Capital Circle       3.0     2127821.0  2.701329e+09             NaN             NaN                         SMT ARUNA DEVI                                                                   NITIBAG COLONY PATNA, 800014
+32     16.0  New Capital Circle       3.0     2125089.0           NaN         1490/08             NaN                         RABINDRA KUMAR                                       KHALILPURA,NEAR DEVI STHAN,PHULWARI SHARIF,PATNA, 801505
+24     30.0  New Capital Circle       3.0     2100175.0  2.701297e+09             NaN            214A                 SHRI SUNIL KUMAR SINHA    HOUSE NBO-5, MANGALAM VIHAR COLONY ARA GARDEN ROAD, JAGDEO PATH, BAILEY ROAD, PATNA, 800014
+14     37.0  New Capital Circle       3.0     2070694.0  2.701305e+09             NaN            1527                            SHANTI DEVI                                                 C-68 BIRLA COLONY PHULWARISHARIF PATNA, 801505
+6      22.0  New Capital Circle       3.0     2033113.0  2.701103e+09            A822             NaN                      NOORJAHAN KHATOON                                 NEW MILLAT COLONY, F.C.I. ROAD, PHULWARI SHARIF, PATNA, 801505
+3      43.0  New Capital Circle       3.0     2023495.0  2.701309e+09     NEW HOLDING   NEW ..HOLDING  SRI LAKSHMAN PANDIT\nSMT BHAWANI DEVI                                      FLAT NO-303, MANSAROVAR ENCLAVE, MAHUABAGH, PATNA, 801506
+39      4.0  New Capital Circle       3.0     2138627.0           NaN             NaN             NaN                          NISHAT YASMIN                             NEW MILAT COLONY SEC -3 EAST OF MATTH PHULWARI THENA ATNA , 801505
+45     34.0  New Capital Circle       3.0     2153351.0           NaN             NaN             NaN                            BINDU MOHAN                       FLAT NO-A-401 QUALITY CAMPUS BLOCK-A MURLICHAK JAGDEO PATH PATNA, 800014
+
+Sample Rows Only in PROD2 (First 10 Columns)
+--------------------------------------------
+
+    si. no.              circle  ward no.  property no.        sas no.  old pid new holding no. old holding no.                  owner name                                                                                  address
+97     47.0  New Capital Circle       3.0           NaN  PMC/3/0949373      NaN             NaN             NaN                  MANJU DEVI                             VILL P.O DHANAWAT MITHA KUAN P.S RUPAS PUR DIST PATNA-801506
+52     42.0  New Capital Circle       3.0     1408605.0  PMC/3/0949664      NaN             NaN          478/B5                 NIRAJ KUMAR                                                SUNDAR NAGAR LOHIA PATH JAGDEO PATH PATNA
+66      6.0  New Capital Circle       3.0           NaN  PMC/3/0954003      NaN             NaN             NaN                SANJU KUMARI                                                  DHANAUT THAL TOLA PHULWARI SHARIF PATNA
+77     20.0  New Capital Circle       3.0           NaN  PMC/3/0952580      NaN             NaN             NaN                 URMILA DEVI                   URMILA BHAWAN SAUBHAGY SHARMA PATH RUKANPURA BAILEY ROAD PATNA -800014
+81     25.0  New Capital Circle       3.0           NaN  PMC/3/0952260      NaN             NaN             NaN                 LALITA DEVI  GAYATRI NAGAR AADARSH VIHAR COLONY SAUBHAGYA SHARMA PATH NEAR SUNRISE APPT PATNA 800014
+90     38.0  New Capital Circle       3.0           NaN  PMC/3/0950058      NaN             NaN             NaN         SATYA PRAKASH SINHA                    FLAT.NO-403 SWADHA GLORY SAUBHAGYA SHARMA PATH RUKANPURA PATNA 800014
+95     45.0  New Capital Circle       3.0           NaN  PMC/3/0949993      NaN             NaN             NaN  SHIV CHANDRA LAL CHOUDHARY                                                          SABAJPURA PHULWARI SHARIF PATNA
+68      9.0  New Capital Circle       3.0           NaN  PMC/3/0953516      NaN             NaN             NaN                ARJUNA SINGH                                                          SABAJPURA PHULWARI SHARIF PATNA
+53     37.0  New Capital Circle       3.0     1408717.0  PMC/3/0950892      NaN             NaN         A/600/5                RAMAUTI DEVI                                             PARKASH NAGAR F.C.I ROAD PHULWARISHRIF PATNA
+88     35.0  New Capital Circle       3.0           NaN  PMC/3/0951307      NaN             NaN             NaN                HEMLATA DEVI             FLAT NO 104 BLOCK B APARNA MANSION BIRLA COLONY PHULWARI SHARIF PATNA 801505
+
+
 </pre>
 </body>
 </html>
